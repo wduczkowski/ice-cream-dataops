@@ -1,0 +1,6 @@
+- externalId: {{ icapi_ds_external_id}}
+  name: Ice Cream Factory Source Data
+  description: This dataset contains source data for the Ice Cream Factory.
+  writeProtected: false
+  metadata:
+    origin: cognite-toolkit
