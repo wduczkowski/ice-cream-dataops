@@ -1,6 +1,6 @@
 environment:
   name: test
-  project: <my-project-test>
+  project: cdf-bootcamp-15-test
   validation-type: test
   selected:
   - modules/
