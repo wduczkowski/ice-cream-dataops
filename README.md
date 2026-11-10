@@ -131,6 +131,8 @@ The workflow uses the Ice Cream API extractor service principal for trigger auth
 
 The configuration has been validated locally on Ubuntu running under WSL against the `test` environment. The actual deployments to both `test` and `prod` are performed through GitHub Actions; production deployment requires manual selection and approval.
 
+For the purposes of the bootcamp, deployments are triggered from the `main` branch. A production-grade project should introduce an explicit versioning and release process and permit production deployment only for immutable, reviewed versions identified by Git tags. The CI/CD workflow should validate the tag, associate it with a specific commit, and deploy that tagged version instead of deploying the current state of `main`.
+
 The GitHub Actions workflow in `.github/workflows/deploy.yaml`:
 
 - deploys to `test` automatically after relevant changes are pushed to `main`;
